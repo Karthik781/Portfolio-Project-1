@@ -1,0 +1,177 @@
+.flex-container{
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+}
+
+.nav-container {
+    height: 100px;
+    background: lightskyblue;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+@media only screen and (min-width:700px) {
+
+	.section-body {
+		width: 70%;
+	}
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-center {
+	justify-content: center;
+}
+.nav-list {
+	list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    color: white;
+}
+
+.section-body {
+	flex-direction: column;
+}
+
+.bio-container {
+	margin-bottom: 40px;
+	justify-content: space-between;
+}
+
+.profile-card{
+	width: 25%;
+  	text-align: center;
+  	box-shadow: 0 10px 10px rgba(59, 43, 91, 0.7);
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutme {
+	width: 70%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  	box-shadow: 0 10px 10px rgba(59, 43, 91, 0.7);
+}
+
+.aboutme p {
+	padding: 10px;
+}
+
+.skills{
+	flex-direction: column;
+	padding: 30px;
+  	box-shadow: 0 10px 10px rgba(59, 43, 91, 0.7);
+}
+
+.skill-container {
+	width: 100%;
+  	background-color: #ddd;
+}
+
+.skill {
+	text-align: right;
+  	padding: 3px;
+  	color: white;
+}
+
+.html {
+	width: 90%; background-color: #000;
+}
+
+.css {
+	width: 80%; background-color: #2196F3;
+}
+
+.js {
+	width: 65%; background-color: #f44336;
+}
+
+.php {
+	width: 60%; background-color: #3333ff;
+}
+
+.edu-container {
+	flex-direction: column;
+	padding: 30px;
+	box-shadow: 0 10px 10px rgba(59, 43, 91, 0.7);
+}
+
+.projects {
+	justify-content: space-between;
+}
+
+.proj-containers {
+	width: 32%;
+  	text-align: center;
+  	box-shadow: 0 10px 10px rgba(59, 43, 91, 0.7);
+}
+
+.proj-containers img {
+	 width: 100%;
+  	 height: 300px;
+}
+
+.proj-container {
+	flex-direction: column;
+}
+
+.proj-containers button {
+	background: #000;
+	color: #fff;
+	padding: 5px;
+}
+
+footer{
+	background: #660033;
+	color: #fff;
+}
+
+/*FOR MOBILE SCREENS*/
+
+@media only screen and (max-width:700px) {
+	
+	.projects {
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+	.proj-containers {
+		width: 100%;
+	}
+
+	.social{
+		display: none;
+	}
+
+	.bio-container{
+		flex-direction: column;
+	}
+
+	.profile-card {
+		width: 100%;
+	}
+
+	.aboutme {
+		width: 100%;
+	}
+}
